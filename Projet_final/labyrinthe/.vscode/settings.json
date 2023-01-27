@@ -1,0 +1,7 @@
+{
+    "makefile.extensionOutputFolder": "./.vscode",
+    "files.associations": {
+        "time.h": "c",
+        "sdl_image.h": "c"
+    }
+}

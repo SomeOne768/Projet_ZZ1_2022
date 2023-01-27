@@ -1,0 +1,5 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/jalil/Documents/ZZ1/Projet/labyrinthe'
+gcc -o prog main.o labyrinthe.o  -Wall -Wextra -g -lSDL2 -lSDL2_image
+make: Leaving directory '/home/jalil/Documents/ZZ1/Projet/labyrinthe'
+ 

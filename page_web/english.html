@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="CSS/reset.css">
+<link rel="stylesheet" type="text/css" href="CSS/Projet_ZZ1.css">
+<title>Our Awesome Project</title>
+</head>
+<body>
+<header>
+<img src="./IMG/ISIMA_LOGO.jpeg">
+<h1> Clara Lacourarie <br>
+Cosima Reves<br>
+Abdeljalil Zoghlami<br>
+Projet 1ère année
+</h1>
+
+</header>
+
+<main>
+<nav>
+<ul>
+<li><a href="#Lundi">Jeu de la vie</a></li>
+<ul>
+<li>sujet1</li>
+<li>sujet2</li>
+</ul>
+
+<li><a href="#Mardi">Jeu de la vie</a></li>
+</ul>
+</nav>
+
+<div id="redaction">
+
+<article class="container">
+<div class="day">
+<h2>Life game</h2>
+</div>
+
+<div class="resume">
+<img class="imgflottante" src="./IMG/jeudelavie.png">
+<span class="gras">Tasks</span> 
+<p><br> Management of a toric word ou limited word : variables in main file<br> 
+Insertion of the rules at the beginning of the code (format : 'B34/S268' or B and S two lists composed of 0 and 1 directly, with B for the rules of birth and S for those of survival)<br>
+<br>
+Input of the initial potitionning with the mouse (pressing "n" then entry to validate) or random input (already random at the beginning but can be generated again by pressing "r")<br>
+<br>
+Management of the events to load from a file ('l'/'c') <br> 
+or save in a file ('e'/'s') <br> 
+and to handle speed variations (arrow keys) <br> 
+as well as ordinary events : shutting down, ...<br>
+<br>Option to pause/to resume with spacebar
+<br>
+Detection of stable states (message + stop)<br>
+<br>
+Management SDL of windows, white backgroung & black squares (division of the window to have a suitable number of squares and size of the window, having set the dimension of the squares)<br>
+<br>Then it is efforless to redefine the dimensions of the squares (variable at the beginning of the main program) and to make the most of the whole available space without losing any pixel !
+<br>
+Graphic depiction : with or without delimitations of unit squares <br>
+<br>
+Memory management (freeing space memory)
+</p>
+</div>
+
+<div class="Skillmanque">
+<h2 class="Tskillmanque gras">Remainning tasks/possible improvements:</h2>
+<p>Having a look at Valgring errors with the SDL</p>
+</div>
+</article>
+<article class="container">
+<div class="day">
+<h2>Arcade</h2>
+</div>
+
+<div class="resume">
+<img class="imgflottante" src="./IMG/peche.png">
+<p>
+<span class="gras">Rules: </span> <br>
+<br>
+<li>Fisherman (Sprite) + small boat </li>
+<br>
+<li>Evolve in 3 world, 1D movement </li>
+<br>
+<li>Have to catch the 8 types of fishes (have at least a '1' in every counter) </li>
+<br>
+<li>Repartition rules of fishes in the different worlds + Markov to handle the probabilities to catch one type of fish or another </li>
+<br>
+<li>Particular case of the chicken : direct victory </li>
+<br>
+<li>Option to sell fishes in order to play the sound-track of the game.
+The time of music bought depends on the amount of money spent (10 coins as minimum to buy a piece of the titre !)</li>
+<br>
+
+<span class="gras">Details</span> <br>
+<br>
+<li>Fress of charge pictures on the websites https://www.stocklib.fr/ https://henrysoftware.itch.io/ et https://free-game-assets.itch.io/</li>
+<br>
+<li>Markov implementation : 3 matrixes</li>
+<br>
+<li>SDL displaying of nackgrounds, text (score), fishes, animation of the character & his boat, sound </li>
+<br>
+<li>+ managing the events : keys to move from right to left and from left to right, fishing, closing the window, detection of the end of the game</li>
+('p' to pause the music, 'r' to play it, arrows to sail, 'f'/ESC/rd cross to quit the program, spacebar to fish)<br>
+
+
+</p>
+
+<br>
+<br>
+<br>
+<br>
+<h3> Some illustrations</h3>
+<img class="ajout" src="IMG/monde2.png">
+<img class="ajout" src="IMG/monde3.png">
+</div>
+
+<div class="Skillmanque">
+<h2 class="Tskillmanque gras">Remarques:</h2>
+<p>Improving animations (flip the character and his boat when the fisher goes to the other side
+</p>
+</div>
+</article>
+
+
+        <article class="container">
+          <div class="day">
+            <h2>Projet final</h2>
+          </div>
+          <div class="resume">
+            <span class="gras">Game principle</span> 
+            <p><br>Managing "Chez Tonton", a mexican food truck <br>
+              <br>
+              3 different dishes : <br>
+              Tacos, Burritos, Nachos<br>
+              <br>
+              3 differents types of customers, each one orders a different dish : <br>
+              The Elf orders Nachos, the Skeleton orders a Taco, the Goblin orders a Burrito<br>
+              <br>
+              The customers appear in waves on a different location, among three possible. They wait a while to be served. If they are not served until their waiting time is over, they leave without food.<br>
+              Each location can be occupied by a customer or not for each wave of clients. <br>
+              <br>
+              <img class="imgflottante" src="IMG/gobelins.png">
+              <br>
+              Each dish has a different preparation time, so it is not always possible to prepare them all before the clients leave.<br>
+              <br>The burning fire on the frying pan indicates that Tonton is preparing the dish for the client marked by the green check icon.<br>
+              <br>
+              <br>Every time a dish is sold to a customer, we earn money. The price is specific to each dish, and can vary according to the disposal of stocks (which is represented by the clock).<br>
+              <br><img  src="IMG/Table_prixpng.png">
+              <br>
+              <br><img  src="IMG/table_rentabilite.png">
+              <br>The time is shown by the green crab on bottom left (with the clock).
+              <br><br><img  src="IMG/srek.png"> <br>
+              <br>
+              <span class="gras">Training</span> 
+              <br>
+              <br>Q-learning :
+              <br>
+              <br>Matrix Q(s,a)  size : 192(states)*6(actions)
+              <br>
+              <br>Three different versions of the game
+              <br>
+              <li>Version n°1: <br>
+                Only one dish is served for each wave of clients, does not depend on the preparation time, no price evolution<br>
+                What the IA has to learn :<br>
+                 price of a taco > price of a burrito > price of Nachos, for each wave.<br>
+              </li>
+              <br>
+              <li>Version n°2:
+                <br>Multiple dishes can be served during each wave of clients. The prices are fixed during the whole day.
+                What the IA has to learn :<br>
+                 price of 3 Nachos > 1 Tacos = 1 Nachos + 1 Burritos > 2 Nachos > 1 Burritos > 1 Nachos</li>
+              <br>
+              <li>Version n°3:
+              <br>Multiple dishes can be served during each wave of clients. The prices change depending on the time of the day.
+              <br>What the IA has to learn : <br>
+              see the table above for the order of profits + "save" some dishes in order to serve them later</li>
+              <br>
+              <br>Choice for the training:
+              <br>epsilon=0.95 originally, then decreases with each iteration.
+              <br>
+              <br> <img src="IMG/0021.png"> <br> <br>   <img src="IMG/1021.png"> <br> <br>  <img src="IMG/2012.png">
+              <br>
+              <br>
+
+            </p>
+          </div>
+
+          <div class="Skillmanque">
+            <h2 class="Tskillmanque gras">What remains to be adressed :</h2>
+            <p>
+              <br>
+              <br>Try different price changes for the dishes whose prices increase during the first and second period of time (to observe the behaviour of the IA)
+              <br>
+              <br> Join the labyrinth extension in the game
+              <br>
+              <br>Possibility to replenish supplies in an other world (the IA would have to learn the path by itself without any indication)
+              <br>Pay for the supplies
+              <br>The period of the day would then change automatically (full stock -> recalculated time period)
+              <br>The game would then never end if the IA always makes the right decisions
+              <br>
+              <br>
+              
+            </p>
+          </div>
+        </article>
+    
+
+
+
+      </div>
+
+
+    </main>
+    <footer></footer>
+  </body>
+</html>

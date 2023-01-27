@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="CSS/reset.css">
+        <link rel="stylesheet" type="text/css" href="CSS/Projet_ZZ1.css">
+        <title>Our Awesome Project</title>
+  </head>
+  <body>
+    <header>
+      <img src="./IMG/ISIMA_LOGO.jpeg">
+      <h1>    Clara Lacourarie <br>
+              Cosima Reves<br>
+              Abdeljalil Zoghlami<br>
+              Projet 1ère année
+      </h1>
+
+    </header>
+
+    <main>
+      <nav>
+        <ul>
+          <li><a href="#Lundi">Jeu de la vie</a></li>
+          <ul>
+            <li><a href="./english.html">English version </a> </li>
+            <li>sujet2</li>
+          </ul>
+
+          <li><a href="#Mardi">Jeu de la vie</a></li>
+        </ul>
+      </nav>
+
+      <div id="redaction">
+
+
+        <article class="container">
+          <div class="day">
+            <h2>Jeu de la vie</h2>
+          </div>
+
+          <div class="resume">
+            <img class="imgflottante" src="./IMG/jeudelavie.png">
+            <span class="gras">Tâches</span> 
+            <p><br>Gestion monde torique ou délimité : variable dans le main <br>
+              <br>
+              Insertion en début de code des règles (format : 'B34/S268' ou B et S deux listes de 0 et 1 directement)<br>
+              <br>
+              Saisie de la disposition initiale à la souris (en appuyant sur la touche n puis entrée pour valider) ou saisie aléatoire (déjà aléatoire au début mais peut être regenérée avec la touche r)<br>
+              <br>
+              Gestion des évènements pour charger depuis un fichier ('l'/'c') <br>              
+              ou enregistrer dans un fichier ('e'/'s')  <br>            
+              et pour gérer la vitesse (touches flèches) <br>              
+              ainsi que les évènements ordinaires : fermeture sur croix <br>
+              <br>Possibilité de mettre le jeu en pause/marche à l'aide de la barre d'espace
+              <br>
+              Détection de l'état stable (message & arrêt)<br>
+              <br>
+              Gestion SDL des fenêtres, du fond blanc & des carrés noirs (division de la fenêtre pour avoir le bon nombre/taille des carrés en ayant fixé la taille de la fenêtre)<br>
+              <br>Il est donc aisé de redéfinir la taille des carrés (variable au début du main) et de profiter de l'entièreté de l'espace disponible sans perdre le moindre pixel !
+              <br>
+              Rendu graphique : avec ou sans délimitation des carrés unitaires <br>
+              <br>
+              Gestion de la mémoire (libérations des matrices)
+            </p>
+          </div>
+
+          <div class="Skillmanque">
+            <h2 class="Tskillmanque gras">Point qu'il reste à traiter:</h2>
+            <p>Faire le réglage pour Valgrind avec la SDL</p>
+          </div>
+        </article>
+      
+        <article class="container">
+          <div class="day">
+            <h2>Arcade</h2>
+          </div>
+
+          <div class="resume">
+            <img class="imgflottante" src="./IMG/peche.png">
+            <p>
+              <span class="gras">Règles du jeu: </span> <br>
+                <br>
+                
+                <li>Pêcheur (Sprite) + sa barque </li>
+                <br>
+                <li>Evolue dans 3 mondes, déplacement 2D</li>
+                <br>
+                <li>Doit pêcher les 8 types de poissons </li>
+                <br>
+                <li>Règles de répartition des poissons dans les mondes + Markov sur les proba. de pêcher les types de poissons </li>
+                <br>
+                <li>Cas particulier du poulet : gagne directement </li>
+                <br>
+                <li>Option de vente des poissons pour faire jouer la bande-son (confort de l'utilisateur)
+                    bien évidemment le temps d'écoute dépendra de la quantité d'argent dépensé (10 or minimum pour acheter le titre !)</li>
+                
+                <br>
+
+                <span class="gras">En détails:</span>  <br>
+                <br>
+                <li>Images libres de droits sur les sites https://www.stocklib.fr/ https://henrysoftware.itch.io/ et https://free-game-assets.itch.io/</li>
+                <br>
+                <li>Implémentation Markov : 3 matrices</li>
+                <br>
+                <li>Affichage SDL fonds, texte (score), poisson, animation personnage & barque, audio </li>
+                <br>
+                <li>+ gestion des évènements : touches pour se déplacer, pêcher, fermeture fenêtre, détection fin de jeu </li>
+                    (p mettre la musique en pause, flèches gauche/droite pour se déplacer, f ESC ou croix pour quitter le programme, espace pour pêcher)<br>
+
+
+
+            </p>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h3> Quelques illustrations</h3>
+            <img class="ajout" src="IMG/monde2.png">
+            <img class="ajout" src="IMG/monde3.png">
+          </div>
+
+          <div class="Skillmanque">
+            <h2 class="Tskillmanque gras">Remarques:</h2>
+            <p>Perfectionnement animations (retourner le personnage en allant à gauche, etc)
+              <br>Suite aux conseils de Monsieur Laurençot, nous avons decidé de monétiser l'accès à la musique.
+              <br>Un tel talent ne devant être à la portée de tout le monde, il faudra désormais vendre des poissons avec la touche v pour ensuite acheter du temps de musique avec la touche r et pouvoir écouter le single de l'été
+              <br>Monsieur Laurençot nous vous remercions, vous venez de créer un business juteux et 3 nouveaux milliardaires.
+            </p>
+          </div>
+        </article>
+
+        <article class="container">
+          <div class="day">
+            <h2>Projet final</h2>
+          </div>
+
+          <div class="resume">
+            <span class="gras">Principe du jeu</span> 
+            <p><br>Gestion de "Chez Tonton", food truck de restauration mexicaine <br>
+              <br>
+              3 plats à distribuer aux clients : <br>
+              Tacos, Burritos, Nachos<br>
+              <br>
+              3 types de clients qui commandent chacun un plat : <br>
+              L'Elfe qui commande des Nachos, le Squelette qui commande un Taco, le Gobelin qui commande un Burrito<br>
+              <br>
+              Les clients apparaissent par vague sur un emplacement parmis les trois possibles. Ils attendent un certain temps pour être servis. Si au bout de leur temps d'attente ils ne sont pas servis, ils repartent.<br>
+              Un emplacement peut être occupé ou rester vide pour une vague de clients donnée. <br>
+              <br>
+              <img class="imgflottante" src="IMG/gobelins.png">
+              <br>
+              Chaque plat a un temps de préparation différent, il n'est donc parfois pas toujours possible de préparer tous les plats avant que les clients partent.<br>
+              <br>Le feu sur la poêle indique que Tonton est en train de préparer le plat du client qui est marqué par l'icône vert.<br>
+              <br>
+              <br>A chaque fois que l'on donne un plat à un client, on gagne de l'argent. Le prix est propre à chaque plat, et peut varier selon l'écoulement des stocks (avancement dans la journée).<br>
+              <br><img  src="IMG/Table_prixpng.png">
+              <br>
+              <br><img  src="IMG/table_rentabilite.png">
+              <br>La période de la journée est indiquée par le crabe vert en bas à gauche (via l'horloge).
+              <br><br><img  src="IMG/srek.png"> <br>
+              <br>
+              <span class="gras">Entraînement</span> 
+              <br>
+              <br>Utilisation Q-learning :
+              <br>
+              <br>Matrice Q(s,a) de taille 192(états)*6(actions)
+              <br>
+              <br>Trois apprentissages différents
+              <br>
+              <li>Version du jeu n°1: <br>
+              Un seul service par vague de client, indépendamment du temps de préparation + pas d'évolution des prix<br>
+              Leçon à apprendre : prix du tacos > prix du burritos > prix des Nachos, constamment.</li>
+              <br>
+              <li>Version du jeu n°2:<br>
+              Plusieurs services possibles par vague. Prix fixes sur la journée.
+              Leçon à apprendre : prix de 3nachos>1Tacos=1Nachos+1Burritos>2Nachos>1Burritos>1Nachos</li>
+              <br>
+              <li>Version du jeu n°3:
+              <br>Plusieurs services possibles par vague. Prix évolutifs sur la journée.
+              <br>Leçon à apprendre : voir tableau ci-dessus pour l'ordre des rentabilités + "économiser" certains aliments pour le futur</li>
+              <br>
+              <br>Choix pour l'entraînement:
+              <br>epsilon=0.95 initialement puis décroit au fil des itérations
+              <br>
+              <br> <img src="IMG/0021.png"> <br> <br>   <img src="IMG/1021.png"> <br> <br>  <img src="IMG/2012.png">
+              <br>
+              <br>
+
+            </p>
+          </div>
+
+          <div class="Skillmanque">
+            <h2 class="Tskillmanque gras">Point qu'il reste à traiter:</h2>
+            <p>
+              <br>Tester double Q-learning (mais l'apprentissage semble déjà optimal)
+              <br>
+              <br>Tester avec des augmentations de prix différentes pour les deux plats dont le prix augmente aux périodes 1 et 2 (pour observer préférence initiale selon lequel augmente le plus)
+              <br>
+              <br> Joindre extension du labyrinthe dans jeu
+              <br>
+              <br>Possibilité d'aller se réapprovisionner dans un autre monde (bien evidemment pour trouver le magasin de ce monde on ne lui donnerait pas d'indication, il apprendrait de lui même).
+              <br>Faire payer le réapprovsionnement
+              <br>Les périodes changeraient automatiquement ensuite (stock rerempli -> période recalculée)
+              <br>Le jeu deviendrait infini seulement si l'IA fait chaque fois les bons choix 
+              <br>
+              <br>
+              
+            </p>
+          </div>
+        </article>
+    
+
+
+
+      </div>
+
+
+    </main>
+    <footer></footer>
+  </body>
+</html>

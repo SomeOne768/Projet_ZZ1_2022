@@ -1,0 +1,132 @@
+ body{
+    background-color: rgb(66 70 66);;
+} 
+
+header{
+	height:  200px;
+	width: 85%;
+	min-width: 900px;
+    margin: auto;
+	background-color: #2a4b52;
+	display: flex;
+	flex-direction: row;
+	color: white;
+	padding: 1%;
+	text-align: center;
+}
+
+header>img{
+	height:  180px;
+}
+
+header>h1{
+	margin: auto;
+    font-weight: 900;
+    font-size: xxx-large;
+}
+
+nav{
+    padding: 15px;
+    position: absolute;
+    top:300px;
+    left: 0px;
+    width:  10%;
+    min-width: 150px;
+    background-color: #225c68;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+/*     visibility:  hidden; */
+
+}
+
+main{
+    width: 920px;
+    margin: auto;
+    margin-top: 80px;
+    padding: 20px;
+}
+
+#redaction{
+    padding: 0px;
+    width: 100%;
+    margin-left: 18px;
+
+}
+
+
+.container {
+  width: 100%;
+  box-shadow: 0 0 1rem 0 rgba(255, 255, 255, .2); 
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+  border-radius: 30px;
+  background-color: #e3e3e3;
+  margin-top: 30px;
+
+}
+
+
+.day{
+    margin: 20px;
+    text-decoration: underline;
+    font-size: xxx-large;
+}
+
+.resume{
+    margin: 20px;
+    background-color: rgb(47, 125, 163);
+    padding: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    color:  white;
+
+}
+
+.Skillmanque{
+    padding: 5px;
+    margin: 20px;
+    background-color: #423a3a;
+    border-radius: 5px;
+    color: white;
+}
+
+.Tskillmanque{
+    margin: 10px;
+
+}
+
+.imgflottante{
+    float: right;
+        width: 200px;
+}
+
+
+.gras{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/*.container:before {
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+}
+.container:before {
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    filter: blur(10px);
+}
+.container {
+    background: inherit;
+}
+ 
+.container:before {
+    background: inherit;
+}*/
+
+.ajout
+{
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+}
